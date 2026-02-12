@@ -33,10 +33,10 @@ export const connectToDatabase = async () => {
 
   try {
     cached.conn = await cached.promise;
-    console.log("✅ MongoDB connected successfully");
+    console.log(" MongoDB connected successfully");
   } catch (error) {
     cached.promise = null;
-    console.error("❌ MongoDB connection failed:", error);
+    console.error(" MongoDB connection failed:", error);
     throw error;
   }
 
